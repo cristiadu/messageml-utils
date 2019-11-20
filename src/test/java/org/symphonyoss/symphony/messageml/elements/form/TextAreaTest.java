@@ -28,7 +28,7 @@ public class TextAreaTest extends ElementTest {
   
   @Test
   public void testTextAreaWithRequiredAttributesOnly() throws Exception {
-    String input = String.format("<messageML><form id=\"form-id\"><textarea name=\"%s\"></textarea>%s</form></messageML>", NAME_VALUE,
+    String input = String.format("<messageML><form id=\"form-id\"><textarea name=\"%s\"/>%s</form></messageML>", NAME_VALUE,
         ACTION_BTN_ELEMENT);
     String expectedPresentationML =
         String.format("<div data-format=\"PresentationML\" data-version=\"2.0\"><form id=\"form-id\"><textarea name=\"%s\"></textarea>%s</form></div>",

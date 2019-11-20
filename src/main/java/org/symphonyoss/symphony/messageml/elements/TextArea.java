@@ -2,8 +2,8 @@ package org.symphonyoss.symphony.messageml.elements;
 
 import org.commonmark.node.Node;
 import org.symphonyoss.symphony.messageml.exceptions.InvalidInputException;
-import org.symphonyoss.symphony.messageml.markdown.nodes.form.FormElementNode;
 import org.symphonyoss.symphony.messageml.markdown.nodes.form.TextAreaNode;
+import org.symphonyoss.symphony.messageml.util.XmlPrintStream;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -21,8 +21,6 @@ public class TextArea extends FormElement {
   private static final String PLACEHOLDER_ATTR = "placeholder";
   private static final String REQUIRED_ATTR = "required";
   private static final List<String> VALID_VALUES_FOR_REQUIRED_ATTR = Arrays.asList("true", "false");
-
-  private static final String MARKDOWN = "Text Area";
 
   public TextArea(Element parent) {
     super(parent, MESSAGEML_TAG);
